@@ -228,7 +228,7 @@ async function ProccessAlerts() {
     monname = uniquealerts[k];
     const m = monname.match(regex)
     const form = m.groups.form
-    const name = m.groups.name
+    const name = m.groups.name.trim()
     if (hideshadow && (form == 'Shadow')) { continue }
     if (hidelegendary && (legendaries.indexOf(name) > -1)) { continue }
     pvpcmd = league + ":" + monranks;
