@@ -232,7 +232,7 @@ async function ProccessAlerts() {
     if (hideshadow && (form == 'Shadow')) { continue }
     if (hidelegendary && (legendaries.indexOf(name) > -1)) { continue }
     pvpcmd = league + ":" + monranks;
-    trackcmd = `${cmdchar}track ${name}${form ? `form:${form}` : ''} ${pvpcmd}${otherinfo ? ` ${otherinfo}` : ''}`
+    trackcmd = `${cmdchar}track ${name} ${form ? `form:${form}` : ''} ${pvpcmd}${otherinfo ? ` ${otherinfo}` : ''}`
     if (!combine || form){ 
         $('#displayalerts').val($('#displayalerts').val() + trackcmd +"\n"); 
         continue   
